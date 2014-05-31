@@ -1,19 +1,13 @@
-package com.example.foo;
+package io.github.msgehard;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
-/**
- * Tests for {@link Foo}.
- *
- * @author user@example.com (John Doe)
- */
-@RunWith(JUnit4.class)
 public class FooTest {
 
     @Test
-    public void thisAlwaysPasses() {
-        assert true;
+    public void thisAlwaysFails() {
+        Assert.assertEquals(false, false);
+
     }
 }
